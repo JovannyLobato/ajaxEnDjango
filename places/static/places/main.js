@@ -5,7 +5,7 @@ $(document).ready(function () {
 
         if (estadoId) {
             $.ajax({
-                url: '/cargar-municipios/',
+                url: 'places/cargar-municipios/',
                 data: { 'estado_id': estadoId },
                 success: function (data) {
                     $('#municipio').append('<option value="">--- Selecciona ---</option>');
